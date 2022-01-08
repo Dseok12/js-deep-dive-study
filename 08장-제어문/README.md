@@ -131,8 +131,23 @@
     - **for문, switch문, while문 등** 여러번 반복되는 루프를 빠져나게 하는 용도.
 
   ```javascript
-  
+  outer: {
+    for(var i = 0; i < 3; i++){
+      for(var j = 0; j < 3; j++){
+        if (i + j === 3 ) break outer;
+        console.log(`inner[${i}, ${j}]`)
+      }
+    }
+  }
   ```
+
+  - return
+
+    - 크게는 **함수 탈출용**, 작게는 2가지 용도가 있음.
+    
+    1. 함수 내부의 값을 함수 외부로 출력시키는 기능.
+
+    2. 함수를 강제로 종료시기는 기능.
 
   </div>
 </details>
@@ -143,6 +158,10 @@
   <summary>continue문</summary>
   <div>
   
+  ## countinue문
+
+  - countinue문은 반복문의 코드 블록 실행을 현 지점에서 중단하고 반복문의 증감식으로 실행 흐름을 이동시킨다. break문처럼 탈출하지는 않는다.
+
   </div>
 </details>
 
