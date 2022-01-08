@@ -51,14 +51,46 @@
   ### 숫자열 타입으로 변환
 
   ```javascript
+  // 1. Number 생성자 함수를 new연산자 없이 호출하는 방법
+  Number('0')
+  Number('-1')
+  Number('10.32')
 
+  //2. parseInt, parseFloat 함수를 사용하는 방법(문자열만 숫자 타입으로 변환 가능)
+  parseInt('0')
+  parseInt('-1')
+  parseFloat('10.53')
+
+  // 3. + 단항 산술 연산자를 이용하는 방법
+  +'0';
+  +'-1';
+  +true;
+  +false;
+
+  // 4. * 산술 연산자를 이용하는 방법
+  '0'*1;
+  '-1'*1;
+  '-1'*1;
+  'true'*1;
+  'false'*1;
 
   ```
 
   ### 불리언 타입으로 변환
 
   ```javascript
+  // Boolean 생성자 함수를 new연산자 없이 호출하는 방법
+  Boolean('x')
+  Boolean('')
+  Boolean('false')
 
+  // ! 부정 논리 연산자를 두 번 사용하는 방법
+  !!'x'
+  !!'NaN'
+  !!'0'
+  !!'null'
+  !!{}
+  !![]
 
   ```
   
@@ -137,7 +169,7 @@
 </details>
 
 <details>
-  <summary></summary>
+  <summary>단축 평가</summary>
   <div>
   
 
